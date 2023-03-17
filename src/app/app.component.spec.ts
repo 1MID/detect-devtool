@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'disable-devtool'`, () => {
+  it(`should have as title 'detect-devtool'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('disable-devtool');
+    expect(app.title).toEqual('detect-devtool');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('disable-devtool app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('detect-devtool app is running!');
   });
 });
